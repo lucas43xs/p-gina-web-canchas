@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #272727;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nave {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+
+.nave h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.nave1 {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    background-color: #00911d;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+a:hover {
+    background-color: #00a822;
+}
+
+.turno_y_historia {
+    flex: 1;
+    display: flex;
+    padding: 35px 45px;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ubicacion {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.turno {
+    background-color: #00911d;
+    color: #ffffff;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 10px 22px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.turno h3 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 22px;
+    padding: 24px;
+    flex: 1;
+    min-height: 340px;
+}
+
+.historia {
+    background-color: #424242;
+}
+
+.historia h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.lugar {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.35;
+}
+
+.maps {
+    background-color: #858348;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maps p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 45px;
+    margin-top: auto;
+}
+
+.footer-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .turno_y_historia {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
