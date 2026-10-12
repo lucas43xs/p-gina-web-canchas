@@ -1,30 +1,194 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #262424;
+    color: white;
 }
 
 header {
-    background-color: #2b2b2b;
-    min-height: 80PX;
+    width: 100%;
+    height: 100px;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
 }
 
+.nave {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
 
+.nave h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.nave1 {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    background-color: #35AB45;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 25px;
+}
+
+.turno_y_historia {
+    flex: 1;
+    display: flex;
+    padding: 35px 45px;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 main {
-    background-color: rgb(26, 24, 24);
+    background-color: rgba(38, 36, 36, 1);
     flex: 1;
 }
 
-footer {
-    background-color: #2b2b2b;
-    min-height: 60PX;
+.ubicacion {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.turno {
+    background-color: #35AB45;
+    color: #ffffff;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 10px 22px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.turno h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 22px;
+    padding: 24px;
+    flex: 1;
+    min-height: 340px;
+}
+
+.historia {
+    background-color: #424242;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.historia a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.historia h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.historia p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.imagen-historia {
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.lugar {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.35;
+}
+
+.maps {
+    background-color: #858348;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+.maps img {
+    height: 150px;
+    width: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.maps p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 22px 45px;
+}
+
+footer a {
+    color: #c5d84d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2B2B2B;
+}
+
+@media (max-width: 900px) {
+    .turno_y_historia {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        text-align: center;
+    }
 }
